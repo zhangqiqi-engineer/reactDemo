@@ -4,6 +4,8 @@ import HomeIndex from "./home"
 import BlogIndex from "./blog"
 import ResumeIndex from "./resume"
 import UserIndex from "./user"
+import TestComponent from './test/test.jsx'
+
 class AppRouter extends React.Component {
     render() {
         return (
@@ -13,6 +15,8 @@ class AppRouter extends React.Component {
                     <li><Link to="/blog">blog</Link></li>
                     <li><Link to="/resume">resume</Link></li>
                     <li><Link to="/user">user</Link></li>
+                    <li><Link to="/test">test</Link></li>
+
                 </ul>
                 <div>
                     {/* Switch只显示一个组件。加exact表示精确匹配/。如果不加exact，/xxx也会匹配/。  */}
@@ -22,6 +26,7 @@ class AppRouter extends React.Component {
                         <Route exact path="/blog" component={BlogIndex} />
                         <Route exact path="/resume" component={ResumeIndex} />
                         <Route exact path="/user" component={UserIndex} />
+                        <Route exact path="/test" component={TestComponent} />
                     </Switch>
                 </div>
             </BrowserRouter>
