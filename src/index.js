@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDom from 'react-dom'
 import Router from "./router.js"
-import './index.css'
+import './index.scss'
 
 // Provider是react-redux两个核心工具之一，作用：将store传递到每个项目中的组件中
 // 第二个工具是connect，稍后会作介绍

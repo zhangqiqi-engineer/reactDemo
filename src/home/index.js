@@ -1,5 +1,5 @@
 import React from 'react';
-import { ConfigProvider, DatePicker, message } from 'antd';
+import { ConfigProvider, DatePicker, message, Button } from 'antd';
 // 由于 antd 组件的默认文案是英文，所以需要修改为中文
 import zhCN from 'antd/es/locale/zh_CN';
 import moment from 'moment';
@@ -26,6 +26,13 @@ export default class Home extends React.Component {
                     <DatePicker onChange={this.handleChange} />
                     <div style={{ marginTop: 20 }}>
                         当前日期：{date ? date.format('YYYY-MM-DD') : '未选择'}
+                    </div>
+                    <div>
+                        <Button type="primary">Primary</Button>
+                        <Button>Default</Button>
+                        <Button type="dashed">Dashed</Button>
+                        <Button type="danger">Danger</Button>
+                        <Button type="link">Link</Button>
                     </div>
                 </div>
             </ConfigProvider>
